@@ -6,7 +6,6 @@
 
 config_profile.php
 
-<?php
 //We start sessions
 session_start();
 
@@ -35,9 +34,8 @@ $url_home = 'index.php';
 
 //Design Name
 $design = 'default';
-?>
 
-changetofb_s1.php
+# changetofb_s1.php
 
 $DBhost ="localhost"; //IPDatabase
 
@@ -49,14 +47,16 @@ $DBName = "boyphon1_pokego";// database name
 
 $table = "hello"; //table name
 
-ทุกหน้า
+# ทุกหน้า
 
 $facebook = new Facebook(array(
+
   'appId'  => 'ไอดีแอด',
+
   'secret' => 'รหัสที่สอง',
+
 ));
 
-php
 $host = "localhost";
 
 $username = "boyphon1_pokego"; //mysqluser
