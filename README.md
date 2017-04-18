@@ -56,7 +56,7 @@ $facebook = new Facebook(array(
   'secret' => 'รหัสที่สอง',
 ));
 
-<?php
+php
 $host = "localhost";
 
 $username = "boyphon1_pokego"; //mysqluser
@@ -67,20 +67,18 @@ $objConnect = mysql_connect($host,$username,$password);
 
 $objDB = mysql_select_db("boyphon1_pokego"); //table name
 
-$strSQL = "SELECT * FROM hello";
+$strSQL = "SELECT * FROM hello"; //ไม่ต้องเปลี่ยน
 
-$objQuery = mysql_query($strSQL) or die (mysql_error());
+$objQuery = mysql_query($strSQL) or die (mysql_error()); //ไม่ต้องเปลี่ยน
 
-$strSQLei = "SELECT * FROM hello WHERE image = '$user'";
+$strSQLei = "SELECT * FROM hello WHERE image = '$user'"; //ไม่ต้องเปลี่ยน
 
-$objQueryei = mysql_query($strSQLei);
+$objQueryei = mysql_query($strSQLei); //ไม่ต้องเปลี่ยน
 
-$objResultei = mysql_fetch_array($objQueryei);
+$objResultei = mysql_fetch_array($objQueryei); //ไม่ต้องเปลี่ยน
 
-$strSQLeiei = "SELECT * FROM hello WHERE iduser = '$user'";
+$strSQLeiei = "SELECT * FROM hello WHERE iduser = '$user'"; //ไม่ต้องเปลี่ยน
 
-$objQueryeiei = mysql_query($strSQLeiei);
+$objQueryeiei = mysql_query($strSQLeiei); //ไม่ต้องเปลี่ยน
 
-$objResulteiei = mysql_fetch_array($objQueryeiei);
-
-?>
+$objResulteiei = mysql_fetch_array($objQueryeiei); //ไม่ต้องเปลี่ยน
