@@ -7,23 +7,29 @@
 config_profile.php
 
 //We start sessions
+
 session_start();
 
 //We log to the DataBase
+
 mysql_connect('localhost', 'username', 'รหัสmysql');
 
 mysql_select_db('ชื่อdatabase');
 
 //Webmaster Email
+
 $mail_webmaster = 'example@example.com';
 
 //Top site root URL
+
 $url_root = 'http://www.example.com';
 
 //Home page file name
+
 $url_home = 'index.php';
 
 //Design Name
+
 $design = 'default';
 
 # changetofb_s1.php
