@@ -40,9 +40,13 @@ $design = 'default';
 changetofb_s1.php
 
 $DBhost ="localhost"; //IPDatabase
+
 $DBuser = "boyphon1_pokego"; //mysqluser
+
 $DBpass = "team1556th"; //mysql password
+
 $DBName = "boyphon1_pokego";// database name
+
 $table = "hello"; //table name
 
 ทุกหน้า
@@ -54,17 +58,29 @@ $facebook = new Facebook(array(
 
 <?php
 $host = "localhost";
+
 $username = "boyphon1_pokego"; //mysqluser
+
 $password = "team1556th"; //mysql password
+
 $objConnect = mysql_connect($host,$username,$password);
 
 $objDB = mysql_select_db("boyphon1_pokego"); //table name
+
 $strSQL = "SELECT * FROM hello";
+
 $objQuery = mysql_query($strSQL) or die (mysql_error());
+
 $strSQLei = "SELECT * FROM hello WHERE image = '$user'";
+
 $objQueryei = mysql_query($strSQLei);
+
 $objResultei = mysql_fetch_array($objQueryei);
+
 $strSQLeiei = "SELECT * FROM hello WHERE iduser = '$user'";
+
 $objQueryeiei = mysql_query($strSQLeiei);
+
 $objResulteiei = mysql_fetch_array($objQueryeiei);
+
 ?>
